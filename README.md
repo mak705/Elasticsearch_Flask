@@ -10,6 +10,8 @@ pip install flask
 3. Mysql >
 pip install MySQL-python
 
+start the elasticsearch
+
 (server, username, password, databsename) ==> ("localhost", "root", "12345678", "test")
 
 How to create a table > 
