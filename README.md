@@ -10,10 +10,12 @@ pip install flask
 3. Mysql >
 pip install MySQL-python
 
+Mysql details is below > 
+(server, username, password, databsename) ==> ("localhost", "root", "12345678", "test")
+
 `Start the elasticsearch` 
 C:\Users\user\Downloads\bigdata\elasticsearch-7.8.0\bin>elasticsearch
 
-(server, username, password, databsename) ==> ("localhost", "root", "12345678", "test")
 
 How to create a table > 
 create table most_searched_values(
