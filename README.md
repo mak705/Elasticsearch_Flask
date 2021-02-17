@@ -21,8 +21,18 @@ create table most_searched_values(
    PRIMARY KEY ( ID )
 );
 
+How to save the data in the index >
 
-How to run?
+"movie_data.json" is present in the static folder. 
+
+using the below command insert in to the Es index
+
+data is the content inside the movie_data.json
+data = []
+for e in data:
+    es.index(index="movie_data", body=e, id=e['id'])
+
+How to run? > 
 python movie.py
 
 You can search the parameter in the box, and Searched item will displayed below, It will be search in the entire index
