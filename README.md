@@ -1,4 +1,4 @@
-# Elasticsearch_Flask
+## Elasticsearch_Flask
 
 Prerequisites
 1. Elasticsearch  >
@@ -10,7 +10,7 @@ pip install flask
 3. Mysql >
 pip install MySQL-python
 
-start the elasticsearch
+# start the elasticsearch
 
 (server, username, password, databsename) ==> ("localhost", "root", "12345678", "test")
 
