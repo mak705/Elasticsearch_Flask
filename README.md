@@ -1,17 +1,18 @@
 # Elasticsearch_Flask
 
 Prerequisites
-1. Elasticsearch 
+1. Elasticsearch  >
 pip install elasticsearch
 
-2. Flask
+2. Flask > 
 pip install flask
 
-3. Mysql
+3. Mysql >
 pip install MySQL-python
 
 (server, username, password, databsename) ==> ("localhost", "root", "12345678", "test")
 
+How to create a table > 
 create table most_searched_values(
    ID INT NOT NULL AUTO_INCREMENT,
    search_term VARCHAR(100) NOT NULL,
@@ -24,7 +25,7 @@ create table most_searched_values(
 How to run?
 python movie.py
 
-You can search the parameter in the box, and Searched item will displayed below
+You can search the parameter in the box, and Searched item will displayed below, It will be search in the entire index
 
 
 
