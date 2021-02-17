@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/" method="get" autocomplete="off">
+  <label for="q">search here:</label><input type="text" name="q" id="q" value="{{q}}">
+  <input type="submit" value="search">
+
+<ol>
+    {% if response %}
+    {% for resp in response['hits']['hits'] %}
+    <li> <a href = "{{ url_for('second',id= resp['_source']['id'])}}" >{{ resp['_source']['name'] }} </a></li>
+    {% endfor %}
+    {% endif %}
+
+</ol>
+</form>
+</body>
+</html>

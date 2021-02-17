@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<form action="/" method="POST" autocomplete="off">
+  <label for="q">search here:</label><input type="text" name="query" id="query" >
+  <input type="submit" value="search">
+    </form>
+<br><br>
+
+
+{% if data_count|length > 0 %}
+<table >
+    <tr>
+
+    <th>Most Search Word</th>
+    <th> Count </th>
+
+
+</tr>
+
+      {% for each in data_count %}
+    <tr align=center>
+      <td> {{each[0] }} </td>
+      <td> {{each[1] }} </td>
+
+
+  </tr>
+{% endfor %}
+
+</table>
+{% endif %}
+
+<br><br>
+
+
+
+
+{% for each in data %}
+
+<!-- <a href ="{{ each['id'] }}" target="_blank">{{each['Title']}} </a><br> -->
+<a href = "{{ url_for('second',id= each['id'])}}" >{{ each['Title'] }} </a><br>
+
+{% endfor %}
+
+
+
+</body>
+</html>
