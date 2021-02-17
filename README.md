@@ -28,10 +28,12 @@ How to save the data in the index >
 using the below command insert in to the Es index
 
 data is the content inside the movie_data.json
+
+```
 data = []
 for e in data:
     es.index(index="movie_data", body=e, id=e['id'])
-
+```
 How to run? > 
 python movie.py
 
