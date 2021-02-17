@@ -34,6 +34,7 @@ using the below command insert in to the Es index
 
 data is the content inside the movie_data.json
 
+Please refer In [29] in Elastic-search Topic.ipynb
 ```
 data = []
 for e in data:
