@@ -10,7 +10,8 @@ pip install flask
 3. Mysql >
 pip install MySQL-python
 
-# start the elasticsearch
+`Start the elasticsearch` 
+C:\Users\user\Downloads\bigdata\elasticsearch-7.8.0\bin>elasticsearch
 
 (server, username, password, databsename) ==> ("localhost", "root", "12345678", "test")
 
